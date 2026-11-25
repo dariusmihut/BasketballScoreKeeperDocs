@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – BBall Score Keeper</title>
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #ff7a1a;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #98989d;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    text-align: center;
+    padding: 64px 24px 32px;
+  }
+  .icon {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 64px;
+  }
+  .contact {
+    background: var(--accent);
+    color: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .contact h2 { margin: 0 0 4px; font-size: 1.15rem; }
+  .contact p { margin: 0 0 14px; color: rgba(255, 255, 255, 0.9); }
+  .button {
+    display: inline-block;
+    background: #fff;
+    color: var(--accent);
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+  }
+  .button:hover { transform: scale(1.04); text-decoration: none; }
+  h3 {
+    margin: 0 4px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 16px 24px;
+    margin-bottom: 10px;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    color: var(--accent);
+    font-size: 1.4rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { margin: 10px 0 0; color: var(--muted); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding-bottom: 40px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="icon">🏀</div>
+  <h1>Support</h1>
+  <div class="subtitle">BBall Score Keeper</div>
+</header>
+
+<main>
+  <div class="contact">
+    <h2>Need help?</h2>
+    <p>Send me a message and I'll get back to you as soon as I can.</p>
+    <a class="button" href="mailto:darius@mihut.xyz?subject=BBall%20Score%20Keeper%20Support">darius@mihut.xyz</a>
+  </div>
+
+  <h3>Frequently asked questions</h3>
+
+  <details>
+    <summary>How do I add points?</summary>
+    <p>Tap +1, +2, or +3 under a team's name to add that many points to its score.</p>
+  </details>
+
+  <details>
+    <summary>I tapped the wrong button. How do I fix the score?</summary>
+    <p>Tap the pencil button next to the +1/+2/+3 buttons, enter the correct score, and tap Save.</p>
+  </details>
+
+  <details>
+    <summary>How do I start a new game?</summary>
+    <p>Tap the menu button (☰) in the top-left corner and choose <strong>New Score</strong>. Pick the team names and colors, then tap Start. The finished game is saved to History.</p>
+  </details>
+
+  <details>
+    <summary>How do I change team names or colors?</summary>
+    <p>Open the menu (☰) and choose <strong>Settings</strong>. Edit the name and color for each team, then tap Save.</p>
+  </details>
+
+  <details>
+    <summary>Where can I see past games?</summary>
+    <p>Open the menu (☰) and choose <strong>History</strong>. Swipe a game to the left to delete it, or tap Clear All to remove everything.</p>
+  </details>
+
+  <details>
+    <summary>Is my data backed up or shared?</summary>
+    <p>No. Everything stays on your device and is never sent anywhere. Deleting the app also deletes your scores and history. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+  </details>
+
+  <details>
+    <summary>Which devices are supported?</summary>
+    <p>BBall Score Keeper runs on iPhone and iPad with iOS 15 or later, in portrait and landscape.</p>
+  </details>
+</main>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a><br>
+  © 2026 Darius Mihut
+</footer>
+</body>
+</html>
